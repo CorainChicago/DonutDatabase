@@ -5,3 +5,18 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+DonutShop.create([{
+  name: "Do-Rite Donuts & Coffee", 
+  description: "Blah, Blah Blah", 
+  address: "50 W Randolph St, Chicago, IL 60601",
+  phone: "(312) 488-2483", 
+  website: "doritedonuts.com"},
+  {
+  name: "Do-Rite Donuts & Coffee", 
+  description: "Blah, Blah Blah", 
+  address: "50 W Randolph St, Chicago, IL 60601",
+  phone: "(312) 488-2483", 
+  website: "doritedonuts.com"},
+  }
+  )
