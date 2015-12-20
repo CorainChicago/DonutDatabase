@@ -1,13 +1,16 @@
+<script src="https://maps.googleapis.com/maps/api/js?key=ENV['API_KEY']&callback=initMap"></script>
 <h2>Chicago Donut Club</h2>
 
 <%@shops.each do |shop| %>
   <div class="donut-shop">
     <p>Name: <%= shop.name %></p>
     <p>Description: <%= shop.description %></p>
-    <p>Address: <%= shop.address %></p>
+    <p id = 'address'>Address: <%= shop.address %></p>
     <p>Website: <%= shop.website%></p>
   </div>
 <% end%>
+
+<%= render "donut_shops/map" %>
 
 <div class="donut-shop">
   <%= form_for DonutShop.new do |f| %> 
@@ -22,5 +25,5 @@
     <%= f.label :description %>:
     <%= f.text_field :description %><br />
     <%= f.submit %>
+    <% end %>
 </div>
-3

@@ -2,6 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
 h2 {
   font-size: 6em;
   color: #D98C9E;
@@ -11,3 +19,4 @@ h2 {
   text-align: center;
   border: 4px double #32957B;
 }
+
