@@ -1,0 +1,10 @@
+<h2>Donuts<h2>
+
+  <% @donuts.each do |donut| %>
+    <p><%= donut.name %></p>
+    <p><%= donut.description %></p>
+    <p><%= DonutShop.find(donut.donut_shop_id).name %>
+  <% end %>
+
+
+<%= render 'donuts/new' %>  

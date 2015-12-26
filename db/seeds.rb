@@ -18,3 +18,24 @@ DonutShop.create([{
   address: "401 1/2 N Franklin St Chicago, IL 60654",
   phone: "(312) 464-9544", 
   website: "thedoughnutvault.tumblr.com/"}])
+
+Donut.create([{
+  name: "Vanilla Creme",
+  description: "Yummy, yummy, yum with sugar",
+  rating_id: 1
+  }])
+
+DonutRating.create([{
+  user_id: 1,
+  donut_id: 1,
+  score: 4,
+  description: "It was tasty",
+  donut_shop_id: 1
+  }])
+
+User.create([{
+  first_name: "Charlie",
+  last_name: "Bear",
+  email: "chaysmagan@gmail.com",
+  password: "love"
+  }])

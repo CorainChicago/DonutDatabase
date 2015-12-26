@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151220014123) do
+ActiveRecord::Schema.define(version: 20151222165911) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "donut_ratings", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "donut_id"
+    t.integer  "score"
+    t.text     "description"
+    t.integer  "donut_shop_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
 
   create_table "donut_shops", force: :cascade do |t|
     t.string   "name"
@@ -22,6 +32,15 @@ ActiveRecord::Schema.define(version: 20151220014123) do
     t.string   "address"
     t.string   "phone"
     t.string   "website"
+    t.integer  "donut_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "donuts", force: :cascade do |t|
+    t.string   "name"
+    t.string   "description"
+    t.integer  "rating_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

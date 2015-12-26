@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
 
+  resources :donut_ratings
+  resources :donuts
   get 'sessions/new'
 
   resources :users
   resources :sessions
   resources :donut_shops
 
-  root :to => 'donut_shops#index'
+  root :to => 'donuts#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
