@@ -3,7 +3,7 @@ class CreateDonuts < ActiveRecord::Migration
     create_table :donuts do |t|
       t.string :name
       t.string :description
-      t.references :rating
+      t.references :donut_shop
 
       t.timestamps null: false
     end

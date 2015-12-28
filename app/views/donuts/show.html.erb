@@ -3,4 +3,11 @@
 <p>Name: <%= @donut.name %></p>
 <p>Description: <%= @donut.description %></p>
 <p>Donut Shop: <%= @donut_shop.name %> </p>
+
+  <% @ratings.each do |r| %>
+    <div>
+      <%= r.score %>
+      <%= r.description %>
+    </div>
+  <% end %>
 <%= render "donut_ratings/new" %>

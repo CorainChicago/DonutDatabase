@@ -1,6 +1,6 @@
 module ApplicationHelper
 
-  def logged_in?
+  def logged_in
     session[:user_id] != nil
   end
   
