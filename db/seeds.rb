@@ -22,14 +22,6 @@ DonutShop.create([{
 Donut.create([{
   name: "Vanilla Creme",
   description: "Yummy, yummy, yum with sugar",
-  rating_id: 1
-  }])
-
-DonutRating.create([{
-  user_id: 1,
-  donut_id: 1,
-  score: 4,
-  description: "It was tasty",
   donut_shop_id: 1
   }])
 
@@ -38,4 +30,12 @@ User.create([{
   last_name: "Bear",
   email: "chaysmagan@gmail.com",
   password: "love"
+  }])
+
+DonutRating.create([{
+  user_id: 1,
+  donut_id: 1,
+  donut_shop_id: 1,
+  score: 4,
+  description: "It was tasty"
   }])

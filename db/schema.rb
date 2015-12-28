@@ -19,9 +19,9 @@ ActiveRecord::Schema.define(version: 20151222165911) do
   create_table "donut_ratings", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "donut_id"
+    t.integer  "donut_shop_id"
     t.integer  "score"
     t.text     "description"
-    t.integer  "donut_shop_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end
@@ -40,9 +40,9 @@ ActiveRecord::Schema.define(version: 20151222165911) do
   create_table "donuts", force: :cascade do |t|
     t.string   "name"
     t.string   "description"
-    t.integer  "rating_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer  "donut_shop_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "users", force: :cascade do |t|

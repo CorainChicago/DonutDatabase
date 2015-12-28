@@ -3,9 +3,9 @@ class CreateDonutRatings < ActiveRecord::Migration
     create_table :donut_ratings do |t|
       t.references :user
       t.references :donut
+      t.references  :donut_shop
       t.integer :score
       t.text :description
-      t.references  :donut_shop
       
       t.timestamps null: false
     end
