@@ -1,10 +1,11 @@
 <h2>Donuts<h2>
 
   <% @donuts.each do |donut| %>
-    <p><%= donut.name %></p>
-    <p><%= donut.description %></p>
-    <p><%= DonutShop.find(donut.donut_shop_id).name %>
+    <p>Name: <%= link_to donut.name , donut %></p>
+    <p>Description: <%= donut.description %></p>
+    <p>From: <%= donut.donut_shop.name %></p>    
   <% end %>
 
-
-<%= render 'donuts/new' %>  
+<% if logged_in %>
+  <%= render 'donuts/new' %> 
+<% end %>   
