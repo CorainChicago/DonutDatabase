@@ -1,11 +1,11 @@
-<h2>Donuts<h2>
-
-  <% @donuts.each do |donut| %>
-    <p>Name: <%= link_to donut.name , donut %></p>
-    <p>Description: <%= donut.description %></p>
-    <p>From: <%= donut.donut_shop.name %></p>    
-  <% end %>
-
-<% if logged_in %>
-  <%= render 'donuts/new' %> 
-<% end %>   
+<section>
+  <h2>Donuts<h2>
+    <% @donuts.each do |donut| %>
+      <p>Name: <%= link_to donut.name , donut %></p>
+      <p>Description: <%= donut.description %></p>
+      <p>From: <%= donut.donut_shop.name %></p>    
+    <% end %>
+  <% if logged_in %>
+    <%= render 'donuts/new' %> 
+  <% end %> 
+</section>  

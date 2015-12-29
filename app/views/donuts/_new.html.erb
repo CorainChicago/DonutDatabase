@@ -1,8 +1,8 @@
 
 <%= form_for Donut.new do |f| %>
-  <%= f.label :name %>:
+  <%= f.label :name %>
   <%= f.text_field :name %>
-  <%= f.label :description %>:
+  <%= f.label :description %>
   <%= f.text_field :description %>
   <%= collection_select(:donut, :donut_shop_id, DonutShop.all, :id, :name) %>
   <%= submit_tag "Create a Donut" %>

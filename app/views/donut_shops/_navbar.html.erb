@@ -1,11 +1,13 @@
-<h2>Chicago Donut Club</h2>
+<nav class="top-bar" data-topbar role="navigation">
+  <div><h1>Chicago Donut Club</h1></div>
 
-<nav>
-  <ul>
-    <li> <%= link_to "Home", root_path, class: "button" %></li>
-    <li> <%= link_to "Donuts", donuts_path, class: "button" %></li>
-    <li> <%= link_to "Donut Shops", donut_shops_path, class: "button" %></li>
-    <li><%= link_to "Login", new_session_path, class: "button" %></li>
-    <li><%= link_to "Register", new_user_path, class: "button" %></li>
-  </ul>
+
+<ul class="menu right">
+  <li > <%= link_to "Home", root_path %></li>
+  <li> <%= link_to "Donuts", donuts_path %></li>
+  <li> <%= link_to "Donut Shops", donut_shops_path %></li>
+  <li> <%= link_to "Login", new_session_path %></li>
+  <li> <%= link_to "Register", new_user_path %></li>
+</ul>
 </nav>
+
