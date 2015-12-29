@@ -1,3 +1,5 @@
+Categories
+
 Splurge
 Value
 Geographical Desirability
@@ -7,5 +9,21 @@ Yeast
 Speciality Donut
 Old Fashion/Cake
 
-Donut Shops show their rated donuts.
+Donut Shops show their rated donuts by category(top 3) and bottom(1 that is below a certain score).
+
+Matrix for Donuts
+
+Find the closest to the user. 
+
+Map for shops on show page. 
+
+About page - Reasoning and logic
+
+Donut based twitter account = retweet from the top donut shops.
+
+
+
+
+
+
 
