@@ -5,4 +5,4 @@ require File.expand_path('../config/application', __FILE__)
 
 Rails.application.load_tasks
 
-rake assets:precompile RAILS_ENV=production
+# rake assets:precompile RAILS_ENV=production
