@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :categories
   root :to => 'donuts#index'
   resources :users
   resources :sessions

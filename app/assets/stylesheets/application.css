@@ -13,3 +13,47 @@
  *= require_tree .
  *= require_self
  */
+
+ h2{
+  font-size:1.2em;
+  margin-left: 20%;
+  margin-right: auto;
+}
+
+ul {
+  list-style-type: none;
+  background-color: #CF6E91;
+  overflow: hidden;
+  margin-right: 15%;
+  margin-left: 15%;
+  width: 70%;
+}
+
+li {
+  font-size: 0.5em;
+  float: left;
+  margin-right: 3%;
+}
+
+li a {
+  text-decoration: none;
+}
+
+a {
+  color: ;
+}
+a:hover{
+  color: #2E0F14;
+}
+
+a:visited{
+  color: #3D141F;
+}
+
+.donut-shop {
+    margin: 20%;
+    background-color: pink;
+    border: 0.5em double black;
+    padding: 2%;
+    word-wrap: break-word;
+}
