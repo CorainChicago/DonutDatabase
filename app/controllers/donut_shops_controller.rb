@@ -6,7 +6,7 @@ class DonutShopsController < ApplicationController
 
   def show
     @shop = DonutShop.find(params[:id])
-    @donuts = Donut.find_by(:donut_shop_id => @shop.id)
+    @donuts_ = Donut.find_by(:donut_shop_id => @shop.id)
   end
 
   def create
