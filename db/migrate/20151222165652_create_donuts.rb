@@ -4,7 +4,7 @@ class CreateDonuts < ActiveRecord::Migration
       t.string :name
       t.string :description
       t.string :occassion
-      t.string :type
+      t.string :type_of_donut
       t.references :donut_shop
 
       t.timestamps null: false
