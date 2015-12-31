@@ -6,11 +6,16 @@
   and (min-device-width: 320px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 2) {  
-  .donut_ratings{
+  .ratings{
     font-size: 1.0em;
     background-color: pink;
-    width: 95%;
-    margin: 0 auto;
+    border-radius: 50%;
+    border: 0.4em double grey;
+    width: 40%;
+    margin: 5% 20% 5% 20%;
     padding: 5%;
+    div{
+      padding: 5%;
+    }
   }
 }
