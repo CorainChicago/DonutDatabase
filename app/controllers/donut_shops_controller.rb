@@ -14,7 +14,8 @@ class DonutShopsController < ApplicationController
     if @shop.save
       redirect_to @shop
     else
-      render root_path
+      @errors = @shop.errors.full_messages
+      render :template => 'donut_shops/new'
     end
   end
 
