@@ -3,21 +3,24 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .donut_shop{
-  border: 0.5em groove #FF69B4;
   text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border: 0.5em groove #FF69B4;
+
   input{
     height: 0.8em;
     margin-top: 2%;
     margin-bottom: 2%;
     padding: 1.5%;
-    border: solid 0.3em #c9c9c9;
+    border: solid 0.1em #c9c9c9;
   }
   textarea {
     height: 2.0em;
-    /*margin-top: 2%;
-    margin-bottom: 2%;
-    padding: 3%;*/
-    border: solid 0.3em #c9c9c9;
+    padding: 1.5%;
+    border: solid 0.1em #c9c9c9;
   }
 }
 

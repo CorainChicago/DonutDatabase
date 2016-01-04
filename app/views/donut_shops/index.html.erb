@@ -1,13 +1,12 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=ENV['API_KEY']&callback=initMap"></script>
-<h2>Chicago Donut Club</h2>
 
 <%@shops.each do |shop| %>
-  <div class="donut-shop">
+  <section class="donut_shop">
     <p>Name: <%= shop.name %></p>
     <p>Description: <%= shop.description %></p>
     <p id = 'address'>Address: <%= shop.address %></p>
     <p>Website: <%= shop.website%></p>
-  </div>
+  </section>
 <% end%>
 
 <%= render "donut_shops/map" %>
