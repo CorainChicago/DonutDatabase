@@ -2,7 +2,7 @@
 
 <%@shops.each do |shop| %>
   <section class="donut_shop">
-    <p>Name: <%= shop.name %></p>
+    <p>Name: <%= link_to shop.name, donut_shop_path(shop) %> </p>
     <p>Description: <%= shop.description %></p>
     <p id = 'address'>Address: <%= shop.address %></p>
     <p>Website: <%= shop.website%></p>
