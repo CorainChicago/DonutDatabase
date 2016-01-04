@@ -1,8 +1,9 @@
+
 <%= form_for DonutShop.new do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %><br />
    <%= f.label :description %>
-  <%= f.text_field :description %><br />
+  <%= f.text_area :description, spellcheck: "true" %><br />
   <%= f.label :address %>
   <%= f.text_field :address %><br />
   <%= f.label :phone %>
