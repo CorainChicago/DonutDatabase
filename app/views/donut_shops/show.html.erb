@@ -1,18 +1,20 @@
 <h2>A Donut Shop </h2>
 
-<p><%= @shop.name%></p>
-<p><%= @shop.description %></p>
-<p><%= @shop.address%></p>
-<p><%=  @shop.website %></p>
-
-<% if @donuts != nil %>
-<p>It has these donuts</p>
-<%  @donuts.each do |donut| %>
-  <p>Name: <%= donut.name %></p>
-  <p>Description: <%= donut.description %></p>
-  <p>Donut Shop: <%= donut_shop.name %> </p>
+<section class="donut_shop">
+  <p><%= @shop.name%></p>
+  <p><%= @shop.description %></p>
+  <p><%= @shop.address%></p>
+  
+  <p><%=  @shop.website %></p>
+  <% if @donuts != nil %>
+  <p>It has these donuts</p>
+  <%  @donuts.each do |donut| %>
+    <p>Name: <%= donut.name %></p>
+    <p>Description: <%= donut.description %></p>
+    <p>Donut Shop: <%= donut_shop.name %> </p>
+    <% end %>
   <% end %>
-<% end %>
 
+  </section>
 <p>Add a donut</p>
 <%= render "donuts/new" %>
