@@ -12,12 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-
 //= require turbolinks
+//= require foundation
 //= require_tree .
-
-$(document).ready(function(){
-  $("#hamburger").click(function(){
-    $(".menu").toggle();
-  });
+$(function() {
+  $(document).foundation();
 });
