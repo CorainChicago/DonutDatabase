@@ -13,33 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
- body{
-  font-family: Helvetica;
-  line-height: 1.2em;
-  text-align: center;
-  width: 80%;
-  margin: 20px 0;
-  padding: 10px;
- }
-
- h1{
-  font-size: 1.2em;
-  line-height: 1.5em;
-  margin-right: 70%;
-  width: 70%;
-  padding-bottom: 3%;
-  position: relative;
- }
-
-#hamburger{
-  float: right;
-  top: 3%;
-  }
-
-.menu{
-    display: none;
-  }
-
-
-
