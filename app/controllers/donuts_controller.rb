@@ -6,9 +6,10 @@ class DonutsController < ApplicationController
 
   def create
     @donut = Donut.new(donut_params)
-    @donut.donut_shop = DonutShop.find(params[:donut][:donut_shop_id])
     if @donut.save
-      redirect_to @donut
+      render "donuts/show"
+    else
+      redirect_to root_path
     end
 
   end
@@ -27,7 +28,10 @@ class DonutsController < ApplicationController
   private
 
   def donut_params
-    params.require(:donut).permit(:name, :description, :occassion, :type_of_donut)
+    params.require(:donut).permit(:name, :description, :occassion, :type_of_donut, :donut_shop_id)
   end
+
+
+ 
 
 end

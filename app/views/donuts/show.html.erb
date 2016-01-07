@@ -2,14 +2,16 @@
 <section class="donut">
   <p>Name: <%= @donut.name %></p>
   <p>Description: <%= @donut.description %></p>
-  <p>Donut Shop: <%= @donut_shop.name %> </p>
+  <p>Donut Shop: <%= @donut.donut_shop.name %> </p>
 </section>
 <section class="ratings">
-  <% @ratings.each do |r| %>
-    <div>
-      <%= r.score %></br>
-      <%= r.description %>
-    </div>
+  <% if @ratings != nil %>
+    <% @ratings.each do |r| %>
+      <div>
+        <%= r.score %></br>
+        <%= r.description %>
+      </div>
+    <% end %>
   <% end %>
  </section> 
 <%= render "donut_ratings/new" %>
