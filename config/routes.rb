@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
 
-  resources :categories
   root :to => 'donuts#index'
+  get    'login'   => 'sessions#new'
+  post   'login'   => 'sessions#create'
+  delete 'logout'  => 'sessions#destroy'
+  resources :categories
   resources :users
-  resources :sessions
   resources :donuts
   resources :donut_ratings
   resources :donut_shops
