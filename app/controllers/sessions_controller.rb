@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/'
     else
-      redirect_to new_session_url, :notice => "Something went wrong, try again."
+      redirect_to login_url, :notice => "Something went wrong, try again."
     end
   end
 
