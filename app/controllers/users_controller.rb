@@ -12,7 +12,7 @@ class UsersController < ApplicationController
       redirect_to root_url, :notice => "Signed up!"
     else
       @errors = @user.errors.full_messages
-      redirect_to new_user_url, :notice => "Something went wrong, try again."
+      render "users/new"
     end 
   end
 
