@@ -2,6 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.title{
+  font-size: 2.0em;
+  text-align: center;
+  padding: 3% 2% 3% 2%;
+  margin-right: 40%;
+  margin-left: 40%;
+  }
+
+.donut{
+  border: 1.0em outset pink;
+  line-height: 1.5em;
+  padding: 5%;
+  width: 10%;
+  height: 12.0em;
+  float: left;
+  margin: 50px;
+}
 
 @media only screen 
   and (min-device-width: 320px) 

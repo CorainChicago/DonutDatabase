@@ -1,4 +1,5 @@
-  <h2>Donuts<h2>
+
+  <h2 class="title">Donuts<h2>
     <% @donuts.each do |donut| %>
   <section class="donut">
       <p>Name: <%= link_to donut.name, donut_path(donut) %></p>

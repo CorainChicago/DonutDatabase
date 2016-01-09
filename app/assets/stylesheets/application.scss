@@ -17,18 +17,23 @@
 
 .top-bar {
   background-color: #f05871;
-  padding: 3%;
+  padding: 2%;
+  position: fixed;
 }
 .title-area {
   font-size: 2.0em;
-  position: fixed;
 }
 
 .top-bar-section {
   font-siz: 1.2em;
   float: right;
   width: 30%;
+  li{
+    display: inline-block;
+    padding-right: 5%;
+  }
 }
+
 
 
 
