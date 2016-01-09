@@ -4,11 +4,12 @@
 
 .donut_shop{
   text-align: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  width: 20%;
+  float: left;
+  padding: 3% 2% 3% 2%; 
+  margin:  3% 2% 3% 2%; 
   border: 0.5em groove #FF69B4;
+}
 
   input{
     height: 0.8em;
