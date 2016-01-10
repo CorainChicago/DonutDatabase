@@ -15,3 +15,9 @@
 //= require turbolinks
 //= require_tree .
 
+$(document).ready(function() {
+    $(".navbar").click(function(){
+      $("#hamburger").toggle();
+      $(".navbar li a").toggle();
+    })
+});

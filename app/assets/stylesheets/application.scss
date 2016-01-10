@@ -30,8 +30,25 @@
   li{
     display: inline-block;
     padding-right: 5%;
+    }
   }
 }
+
+.navbar {
+  img{
+  display: none;
+}
+}
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 1) {
+  .navbar img {
+    display: block;
+  }
+  .navbar li a{
+  display: none;
+  }
 }
 
 
