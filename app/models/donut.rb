@@ -3,5 +3,5 @@ class Donut < ActiveRecord::Base
   belongs_to :donut_shop
   accepts_nested_attributes_for :donut_shop
 
-  validate
+   validates :name, :description, :occassion, :type_of_donut, :donut_shop_id, :presence => true
 end
