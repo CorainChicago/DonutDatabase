@@ -7,16 +7,19 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
-
-    
   </head>
   <body>
+    <div class="container-fluid">
     <header>
+      <div class="container">
+        <div class="jumbotron">
+          <h1>Chicago Donut Club</h1>
+        </div>
+      </div>    
       <%= render 'layouts/navigation' %>
     </header>
-    <main role="main">
        <%= render 'layouts/messages' %>
        <%= yield %>
-    </main>
+    </div>
   </body>
 </html>
