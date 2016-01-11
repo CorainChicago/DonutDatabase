@@ -4,4 +4,5 @@ class Donut < ActiveRecord::Base
   accepts_nested_attributes_for :donut_shop
 
    validates :name, :description, :occassion, :type_of_donut, :donut_shop_id, :presence => true
+    validates :name, uniqueness: { scope: :donut_shop_id } 
 end
