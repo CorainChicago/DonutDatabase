@@ -4,23 +4,41 @@
 
 .donut_shop{
   text-align: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  width: 20%;
+  float: left;
+  padding: 3% 2% 3% 2%; 
+  margin:  3% 2% 3% 2%; 
   border: 0.5em groove #FF69B4;
+}
 
-  input{
-    height: 0.8em;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    padding: 1.5%;
-    border: solid 0.1em #c9c9c9;
-  }
-  textarea {
-    height: 2.0em;
-    padding: 1.5%;
-    border: solid 0.1em #c9c9c9;
-  }
+.new_donut_shop{
+  text-align: center;
+  border: 0.5em groove #FF69B4;
+  float: right;
+  width: 35%;
+  margin-right: 30%;
+  margin-left: 40%;
+}
+
+.new_donut_shop input {
+  font-size: 1.4em;
+  border: solid 0.15em #c9c9c9;
+  height: 1.3em;
+  margin-top: 5%;
+  padding: 1.5%;
+  
+}
+
+
+.new_donut_shop label{
+  display: block;
+  margin-top: 5%;
+}
+.new_donut_shop textarea{
+  border: solid 0.15em #c9c9c9;
+  height: 4.5em;
+  width: 40%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 

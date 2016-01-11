@@ -5,18 +5,19 @@
     <title><%= content_for?(:title) ? yield(:title) : "Chicago Donut Club" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Chicago Donut Club" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%# Modernizr is required for Zurb Foundation %>
-    <%= javascript_include_tag 'vendor/modernizr' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+
   </head>
   <body>
-    <header>
-      <%= render 'layouts/navigation' %>
-    </header>
-    <main role="main">
+      <div class="container">
+        <div class="jumbotron">
+          <h1>Chicago Donut Club</h1>
+        </div>
+        <%= render 'layouts/navigation' %>
        <%= render 'layouts/messages' %>
        <%= yield %>
-    </main>
+      </div>    
+    </div>
   </body>
 </html>

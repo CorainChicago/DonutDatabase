@@ -1,11 +1,14 @@
-  <h2>Donuts<h2>
-    <% @donuts.each do |donut| %>
-  <section class="donut">
-      <p>Name: <%= link_to donut.name, donut_path(donut) %></p>
-      <p>Description: <%= donut.description %></p>
-      <p>From: <%= donut.donut_shop.name %></p>   
-  </section>  
-    <% end %>
+
+  <h2 class="title">Donuts<h2>
+    <div class="row top-buffer">
+      <% @donuts.each do |donut| %>
+        <section class="col-md-3 col-md-offset-1 top-buffer donut">
+          <p>Name: <%= link_to donut.name, donut_path(donut) %></p>
+          <p>Description: <%= donut.description %></p>
+          <p>From: <%= donut.donut_shop.name %></p>   
+        </section>  
+      <% end %>
+    </div>
   <% if logged_in %>
     <%= render 'donuts/new' %> 
   <% end %> 

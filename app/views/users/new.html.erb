@@ -1,21 +1,46 @@
-<div class="row">
-  <div class="medium-6 medium-centered large-4 large-centered columns">
-    <div class="row column log-in-form">
-      <h4 class="text-center">Create a User Account</h4>
-      <%= form_for @user do |f| %> 
-        <%= render 'layouts/errors' %>
-        <%= f.label :first_name %>
-        <%= f.text_field :first_name %><br />
-        <%= f.label :last_name %>
-        <%= f.text_field :last_name %><br />
-        <%= f.label :email%>
-        <%= f.text_field :email %><br />
-        <%= f.label :password%>
-        <%= f.password_field :password %><br />
-        <%= f.label :password_confirmation %>
-        <%= f.password_field :password_confirmation %>
-        <%= f.submit %>
+
+
+  <div class="row-fluid ">
+    <div class="span4 well">
+      <%= form_for @user, :html => {:class => "form-horizontal center"} do |f| %> 
+        <div class="form-group">
+          <%= f.label :first_name, class:"control-label col-sm-2" %>
+          <div class="col-sm-6">
+            <%= f.text_field :first_name, class:"form-control" %><br />
+          </div>
+        </div>
+        <div class="form-group">
+          <%= f.label :last_name, class:"control-label col-sm-2" %>
+          <div class="col-sm-6">
+            <%= f.text_field :last_name, class:"form-control" %><br />
+          </div>
+        </div>
+        <div class="form-group">
+          <%= f.label :email, class:"control-label col-sm-2" %>
+          <div class="col-sm-6">
+            <%= f.text_field :email, class:"form-control" %><br />
+          </div>
+        </div>
+        <div class="form-group">
+          <%= f.label :password, class:"control-label col-sm-2" %>
+          <div class="col-sm-6">
+            <%= f.text_field :password, class:"form-control" %><br />
+          </div>
+        </div>
+        <div class="form-group"> <br />
+        <%= f.label :password_confirmation, class:"control-label col-sm-2" %>
+          <div class="col-sm-6">
+            <%= f.password_field :password_confirmation, class:"form-control" %><br />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <%= f.submit %>
+          </div>
+        </div>
       <% end %>
     </div>
   </div>
-</div>    
+</div>
+
+   

@@ -12,9 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require foundation
+//= require bootstrap-sprockets
 //= require_tree .
-$(function() {
-  $(document).foundation();
+
+$(document).ready(function() {
+    $(".navbar").click(function(){
+      $("#hamburger").toggle();
+      $(".navbar li a").toggle();
+    })
 });

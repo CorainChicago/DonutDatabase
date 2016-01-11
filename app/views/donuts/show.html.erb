@@ -1,10 +1,10 @@
 <h2>Each donut is different each day. </h2>
-<section class="donut">
+<section class="col-sm-2 panel panel-default">
   <p>Name: <%= @donut.name %></p>
   <p>Description: <%= @donut.description %></p>
   <p>Donut Shop: <%= @donut.donut_shop.name %> </p>
-</section>
-<section class="ratings">
+  </section> 
+  <section class="col-sm-2">
   <% if @ratings != nil %>
     <% @ratings.each do |r| %>
       <div>
