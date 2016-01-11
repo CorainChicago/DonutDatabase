@@ -11,10 +11,9 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to root_url, :notice => "Signed up!"
     else
-      render "new"
-    end
-
-    
+      @errors = @user.errors.full_messages
+      render "users/new"
+    end 
   end
 
   private
