@@ -1,14 +1,14 @@
-<script src="https://maps.googleapis.com/maps/api/js?key=ENV['API_KEY']&callback=initMap"></script>
-
-<%@shops.each do |shop| %>
-  <section class="donut_shop">
-    <p>Name: <%= link_to shop.name, donut_shop_path(shop) %> </p>
-    <p>Description: <%= shop.description %></p>
-    <p id = 'address'>Address: <%= shop.address %></p>
-    <div ="map"></div>
-    <p>Website: <%= shop.website%></p>
-  </section>
-<% end%>
+ <h2 class="title">Donut Shops<h2>
+    <div class="row top-buffer">
+      <%@shops.each do |shop| %>
+      <section class="donut">
+        <p>Name: <%= link_to shop.name, donut_shop_path(shop) %> </p>
+        <p>Description: <%= shop.description %></p>
+        <p id = 'address'>Address: <%= shop.address %></p>
+        <div ="map"></div>
+        <p>Website: <%= shop.website%></p>
+      </section>
+    <% end%>
 
 <section class="donut_shop_form">
   <%= render  "donut_shops/new" %>
