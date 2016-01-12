@@ -15,7 +15,7 @@ class DonutShopsController < ApplicationController
       redirect_to @shop
     else
       @errors = @shop.errors.full_messages
-      render :template => 'donut_shops/new'
+      render 'donut_shops/new'
     end
   end
 

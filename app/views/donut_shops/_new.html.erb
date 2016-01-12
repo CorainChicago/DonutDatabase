@@ -1,14 +1,41 @@
-
-  <%= form_for DonutShop.new do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %><br />
-     <%= f.label :description %>
-    <%= f.text_area :description, spellcheck: "true" %><br />
-    <%= f.label :address %>
-    <%= f.text_field :address %><br />
-    <%= f.label :phone %>
-    <%= f.text_field :phone %><br />
-    <%= f.label :website %>
-    <%= f.text_field :website %><br />
-    <%= submit_tag "Add a Donut Shop" %>
-  <% end %>
+<div class="row col-md-12">
+  <div class="span4 well">
+    <%= form_for DonutShop.new, :html => {:class => "form-horizontal center"} do |f| %>
+        <div class="form-group">
+          <%= f.label :name, class:"control-label col-sm-4" %>
+          <div class="col-sm-8">
+            <%= f.text_field :name %>
+          </div>
+        </div>
+        <div class="form-group">  
+          <%= f.label :description, class:"control-label col-sm-4" %>
+          <div class="col-sm-8">
+            <%= f.text_area :description, spellcheck: "true" %>
+          </div>
+        </div>
+        <div class="form-group">
+          <%= f.label :address, class:"control-label col-sm-4" %>
+          <div class="col-sm-6"> 
+            <%= f.text_field :address %>
+         </div>
+        </div>
+        <div class="form-group"> 
+          <%= f.label :phone, class:"control-label col-sm-4" %>
+          <div class="col-sm-6">
+            <%= f.text_field :phone %>
+          </div>
+        </div>
+        <div class="form-group">
+          <%= f.label :website, class:"control-label col-sm-4" %>
+          <div class="col-sm-6">
+            <%= f.text_field :website %>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <%= submit_tag "Add a Donut Shop", class:"btn btn-default" %>
+          </div>
+         </div> 
+    <% end %>
+    </div>
+  </div>

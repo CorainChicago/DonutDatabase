@@ -4,8 +4,8 @@
       <% @donuts.each do |donut| %>
         <section class="col-md-3 col-md-offset-1 top-buffer donut">
           <h4>Name: <%= link_to donut.name, donut_path(donut) %></h4>
-          <h4>Descrih4tion: <%= donut.description %></h4>
-          <h4>From: <%= donut.donut_shop.name %></h4>   
+          <h5>Description: <%= donut.description %></h5>
+          <h5>From: <%= donut.donut_shop.name %></h5>   
         </section>  
       <% end %>
     </div>

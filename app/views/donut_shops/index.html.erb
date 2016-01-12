@@ -1,12 +1,12 @@
  <h2 class="title">Donut Shops<h2>
     <div class="row top-buffer">
       <%@shops.each do |shop| %>
-      <section class="donut">
-        <p>Name: <%= link_to shop.name, donut_shop_path(shop) %> </p>
-        <p>Description: <%= shop.description %></p>
-        <p id = 'address'>Address: <%= shop.address %></p>
+      <section class="col-md-3 col-md-offset-1 top-buffer donut">
+        <h4>Name: <%= link_to shop.name, donut_shop_path(shop) %> </h4>
+        <h5>Description: <%= shop.description %></h5>
+        <h5 id = 'address'>Address: <%= shop.address %></h5>
         <div ="map"></div>
-        <p>Website: <%= shop.website%></p>
+        <h5>Website: <%= shop.website%></h5>
       </section>
     <% end%>
 

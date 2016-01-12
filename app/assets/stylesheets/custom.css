@@ -5,3 +5,10 @@
 .jumbotron{
   background: pink;
 }
+
+.donut{
+  text-align: center;
+  margin-top: 0%;
+  margin-bottom: 3%;
+  border: 0.5em groove #FF69B4;
+}
