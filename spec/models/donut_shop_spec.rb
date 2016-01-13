@@ -6,7 +6,12 @@ describe DonutShop do
   
   describe "validations" do
     it "validates a complete donut shop" do
+      donut_shop_complete.valid?
       expect(donut_shop_complete.errors.messages.count).to eq 0
+    end
+    it "throws an error when a required part of object is missing" do
+      donut_shop.valid?
+      expect(donut_shop.errors.messages.count).to eq 5
     end
   end
 end
