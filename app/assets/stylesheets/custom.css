@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .jumbotron{
-  background: pink;
+  background-color: pink !important;
 }
 
 .donut{
