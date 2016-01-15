@@ -5,4 +5,6 @@ class DonutShop < ActiveRecord::Base
   validates :name, :description, :address, :phone, :website, presence: true
   validates :address, :phone, uniqueness: true
 
+  
+
 end
