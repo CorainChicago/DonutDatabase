@@ -21,41 +21,7 @@
 @import "custom.css";
 
 
-.top-bar {
-  background-color: #f05871;
-  width: 100%;
-  padding: 2%;
-.title-area {
-  font-size: 2.0em;
-}
 
-.top-bar-section {
-  font-siz: 1.2em;
-  float: right;
-  width: 30%;
-  li{
-    display: inline-block;
-    padding-right: 5%;
-    }
-  }
-}
-
-.navbar {
-  img{
-  display: none;
-}
-}
-
-
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 1) {
-  .navbar img {
-    display: block;
-  }
-  .navbar li a{
-  display: none;
-  }
-}
 
 
 
