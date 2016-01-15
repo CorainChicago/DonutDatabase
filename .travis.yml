@@ -1,0 +1,5 @@
+language: ruby
+
+
+
+bundle install --jobs=3 --retry=3
