@@ -4,20 +4,17 @@ class DonutRatingsController < ApplicationController
   end
 
   def create
-    @rating = DonutRating.new(rating_params)
-    @rating.donut_id = session[:donut_id]
-    @rating.user_id = session[:id]
-    @donut = Donut.find(session[:donut_id])
-    @rating.donut_shop_id = @donut.donut_shop_id
-    if @rating.save
-      redirect_to @donut
-    else
-      render root_path
-    end
-  end
-
-  def index
-    @ratings = DonutRating.all
+    # @rating = DonutRating.new(rating_params)
+    byebug
+    # @rating.donut_id = session[:donut_id]
+    # @rating.user_id = session[:id]
+    # @donut = Donut.find(session[:donut_id])
+    # @rating.donut_shop_id = @donut.donut_shop_id
+    # if @rating.save
+    #   redirect_to @donut
+    # else
+    #   render root_path
+    # end
   end
 
   private
