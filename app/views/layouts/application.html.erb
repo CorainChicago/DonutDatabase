@@ -8,13 +8,11 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
 
+   <script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
   </head>
   <body>
-      <div class="container">
-        <div class="jumbotron">
-          <h1>Chicago Donut Club</h1>
-        </div>
         <%= render 'layouts/navigation' %>
+      <div class="container">
        <%= render 'layouts/messages' %>
        <%= render 'layouts/errors' %>
        <%= yield %>
