@@ -4,10 +4,10 @@ Rails.application.routes.draw do
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
-  resources :categories
   resources :users
-  resources :donuts
-  resources :donut_ratings
+  resources :donuts do
+    resources :donut_ratings
+  end
   resources :donut_shops
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,14 +1,11 @@
-<section class="new_rating"
-  <%= form_for DonutRating.new do |f| %>
+<section class="new_rating" >
+     <%= form_for DonutRating.new, :url => donut_donut_ratings_path(@donut) do |f| %>
     <%= f.label :score %>
-    <%= f.collection_radio_buttons(:score, [[1, '1. Didnt finish it'], [2, '2. Finished it but wont eat it again'], [3, '3. It fills the hunger'], [4, '4. is a lovbely number'], [5, '5 is a yes']],  :first, :last) do |b| %>
-      <% b.label { b.radio_button + b.text } %>
-    <% end %>
-    
-    <%= f.label :description %>
+    <%= f.number_field :score %><br />
+     <%= f.label :description %>
     <%= f.text_field :description %><br />
-    <%= hidden_field_tag(:donut_id, params[:id]) %>
-    <%= submit_tag "Rate a Donut" %>
+    <%= f.submit "Rate a Donut" %>
   <% end %>
 </section>  
+
 
