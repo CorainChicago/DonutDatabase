@@ -19,7 +19,7 @@ RSpec.describe DonutsController, :type => :controller do
 
   describe "POST #create" do
     it "increases the donut count" do
-      expect {post :create, donut: {first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, password: Faker::Lorem.word} }.to change(User,:count).by(+1)
+      expect {post :create, donut: {name: Faker::Lorem.word, occassion: "Splurge", description: Faker::Lorem.sentence, type_of_donut: "Yeast", donut_shop_id: 1} }.to change(Donut,:count).by(+1)
     end
   end
 end

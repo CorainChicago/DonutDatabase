@@ -2,14 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+textarea{
+  width: 20.0em;
+  height: 10.0em;
+}
 .donut{
   text-align: center;
-  margin-bottom: 3%;
+  width: 50%;
+  padding: 2%;
   border: 0.5em groove #FF69B4;
 }
 
 div .donut{
   height: 5.5em;
 
+}
+
+.donut_show{
+  text-align: center;
 }

@@ -2,20 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@media only screen 
-  and (min-device-width: 33320px) 
-  and (max-device-width: 3736px) 
-  and (-webkit-min-device-pixel-ratio: 2) {  
-  .ratings{
-    font-size: 1.0em;
-    background-color: pink;
-    border-radius: 50%;
-    border: 0.4em double grey;
-    width: 40%;
-    margin: 5% 20% 5% 20%;
-    padding: 5%;
-    div{
-      padding: 5%;
-    }
-  }
+.rating{
+  width: 20%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-bottom: 2%;
+  border: 0.5em groove #FF69B4;
+}
+
+
+.radio label{
+  line-height: 3.8em;
+  display: block;
 }
