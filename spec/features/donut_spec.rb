@@ -1,9 +1,8 @@
 require 'rails_helper'
 
 feature "User views the home page" do
-  scenario "and clicks on a donut" do
+  scenario "sees a list of donuts" do
     visit '/donuts'
-    find('.donut h4').click
-    expect(page).to have_content("User won!!")
+    expect(page).to have_content("Donut")
   end
 end  

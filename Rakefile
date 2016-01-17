@@ -5,4 +5,6 @@ require File.expand_path('../config/application', __FILE__)
 
 Rails.application.load_tasks
 
+rake db:seed RAILS_ENV=test --trace
+
 # rake assets:precompile RAILS_ENV=production
