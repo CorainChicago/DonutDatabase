@@ -40,6 +40,7 @@ gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'byebug'
+  gem 'capybara'
   gem 'rspec-rails', '~> 3.0'
   gem 'faker'
 end

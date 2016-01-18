@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe DonutsController, :type => :controller do 
 
-  let(:donut) { Donut.new }
+  let!(:donut) { Donut.new }
 
   describe "GET #index" do
 
