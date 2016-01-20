@@ -21,9 +21,6 @@ RSpec.describe DonutShopsController,  :type => :controller do
     end
   end
 
-
-  # The test below need work. 
-
   describe 'POST #create' do
     context 'with valid attributes' do
 
@@ -35,6 +32,7 @@ RSpec.describe DonutShopsController,  :type => :controller do
           }.to change { DonutShop.count }.from(0).to 1
       end
     end
+
     context 'with invalid params' do 
       donut_shop_attributes = { name: Faker::Lorem.word, description: Faker::Lorem.sentence, address: Faker::Address, website: Faker::Internet.url }
 
