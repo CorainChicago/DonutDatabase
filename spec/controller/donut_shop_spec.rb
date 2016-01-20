@@ -35,7 +35,7 @@ RSpec.describe DonutShopsController,  :type => :controller do
           }.to change { DonutShop.count }.from(0).to 1
       end
     end
-    context 'with non-valid params' do 
+    context 'with invalid params' do 
       donut_shop_attributes = { name: Faker::Lorem.word, description: Faker::Lorem.sentence, address: Faker::Address, website: Faker::Internet.url }
 
       it "renders a new donut shop form" do  
