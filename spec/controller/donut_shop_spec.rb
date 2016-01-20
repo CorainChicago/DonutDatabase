@@ -22,18 +22,18 @@ RSpec.describe DonutShopsController,  :type => :controller do
 
   # The test below need work. 
 
-  # describe 'POST #create' do
-  #   context 'with valid attributes' do
+  describe 'POST #create' do
+    context 'with valid attributes' do
   #     it 'creates a new donut shop' do
   #       post :create, donut_shop: attributes_for(:donut_shop)
   #       expect(DonutShop.count).to eq(1)
   #     end
 
-  #     it "increases the donut shop count" do
-  #       post :create, donut_shop: { name: Faker::Lorem.word, description: Faker::Lorem.sentence, address: Faker::Address, phone: "333-333-3333", website: Faker::Internet.url, donut_id: 1 }
-  #       expect(assigns(:donut_shop)).to be_an_instance_of(DonutShop)
-  #     end
-  #   end
-  # end
+      it "increases the donut shop count" do
+        post :create, donut_shop: { name: Faker::Lorem.word, description: Faker::Lorem.sentence, address: Faker::Address, phone: "333-333-3983", website: Faker::Internet.url, donut_id: 1 }
+        expect(assigns(:donut_shop)).to be_an_instance_of(DonutShop)
+      end
+    end
+  end
 end
  
