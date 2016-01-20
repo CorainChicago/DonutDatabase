@@ -20,7 +20,6 @@ class DonutShopsController < ApplicationController
   end
 
 
-
   private
 
   def shop_params
