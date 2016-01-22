@@ -1,7 +1,8 @@
-
-<div class="new_donut">
+<div class="row col-md-12">
+  <div class="span4 well">
+    <div class="new_donut">
   <h2>Add a new donut</h2>
-  <%= form_for Donut.new, :html => {:class=>"form-horizontal", :role=>"form"} do |f| %>
+  <%= form_for Donut.new, :html => {:class=>"form-horizontal center", :role=>"form"} do |f| %>
   <div class="form-group">
     <%= f.label :name, class:"control-label col-sm-2" %>
     <div class="col-sm-10">
@@ -44,4 +45,6 @@
        </div> 
     </div>
   <% end %>
+</div>
+</div>
 </div>  
