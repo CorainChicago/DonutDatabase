@@ -3,8 +3,7 @@
 <section class="donut_shop col-md-4">
   <p><%= @shop.name%></p>
   <p><%= @shop.description %></p>
-  <p><%= @shop.address%></p>
-  
+  <p><%= @shop.address%></p> 
   <p><%=  @shop.website %></p>
   <% if @donuts != nil %>
   <p>It has these donuts</p>
@@ -14,7 +13,8 @@
     <p>Donut Shop: <%= donut_shop.name %> </p>
     <% end %>
   <% end %>
-
-  </section>
-<p>Add a donut</p>
-<%= render "donuts/new" %>
+</section>
+<section> 
+  <p>Add a donut</p>
+  <%= render "donuts/new" %>
+</section>
