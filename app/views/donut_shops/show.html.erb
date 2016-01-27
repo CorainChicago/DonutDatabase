@@ -1,9 +1,12 @@
 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfu-_rEh0nc0i2DIGlt3KLkmoNRVo_7sw
+&signed_in=true&callback=initMap"
+    async defer></script>       
 <section class="donut_shop col-lg-12 col-centered">
   <h2>A Donut Shop </h2>
   <p><%= @shop.name%></p>
   <p><%= @shop.description %></p>
-  <p><%= @shop.address%></p> 
+  <p id ="address"><%= @shop.address%></p> 
   <p><%=  @shop.website %></p>
   <% if @donuts != nil %>
     <p>It has these donuts</p>
@@ -13,7 +16,7 @@
       <p>Donut Shop: <%= donut_shop.name %> </p>
       <% end %>
     <% end %>
-    <div id="map">
+    <div id= "map">
     </div>
 </section>
 <section> 
