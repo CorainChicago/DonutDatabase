@@ -5,7 +5,7 @@ require File.expand_path('../config/application', __FILE__)
 
 Rails.application.load_tasks
 
-rake db:seed RAILS_ENV=test --trace
+
 
 desc "Setup test database - drops, loads schema, migrates and seeds the test db"
 task :test_db_setup => [:pre_reqs] do
@@ -19,4 +19,4 @@ task :test_db_setup => [:pre_reqs] do
   Rake::Task['db:migrate'].invoke
 end
 
-# rake assets:precompile RAILS_ENV=production
+
