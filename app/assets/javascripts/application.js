@@ -15,7 +15,3 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
-$(document).ready(function(){
-  othercodeAddress();
-  initMap();
-});
