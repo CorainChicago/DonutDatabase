@@ -23,7 +23,7 @@ class DonutShopsController < ApplicationController
   private
 
   def shop_params
-    params.require(:donut_shop).permit(:name, :description, :address, :phone, :website)
+    params.require(:donut_shop).permit(:name, :description, :address, :phone, :website, :picture)
   end
   
 end
