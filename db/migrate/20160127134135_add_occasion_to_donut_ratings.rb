@@ -1,4 +1,4 @@
-class AddOccasionToDonutRating < ActiveRecord::Migration
+class AddOccasionToDonutRatings < ActiveRecord::Migration
   def change
     add_column :donut_ratings, :occasion, :string
   end
