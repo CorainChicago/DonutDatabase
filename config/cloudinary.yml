@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dwj5h48m2
+  api_key: '664259755638162'
+  api_secret: A6BiPixJqJ7hT-uhZtIpRG0w17o
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dwj5h48m2
+  api_key: ENV['CLOUD_API_KEY']
+  api_secret: ENV['CLOUD_SECRET']
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dwj5h48m2
+  api_key: '664259755638162'
+  api_secret: A6BiPixJqJ7hT-uhZtIpRG0w17o
+  enhance_image_tag: true
+  static_image_support: false

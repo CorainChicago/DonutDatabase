@@ -31,6 +31,13 @@
             <%= f.text_field :website %>
           </div>
         </div>
+        <div class="form-group field">
+          <%= f.label :picture, class:"control-label col-sm-4" %>
+          <div class="col-sm-6">
+            <%= f.hidden_field(:picture_cache) %>
+            <%= f.file_field(:picture) %>
+          </div>
+        </div>
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10">
             <%= submit_tag "Add a Donut Shop", class:"btn btn-default" %>

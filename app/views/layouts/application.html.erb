@@ -8,7 +8,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv-3Cg_SpqVld5fbgweEsZfh7MZniBobU&callback=initMap">
+      src="https://maps.googleapis.com/maps/api/js?key=ENV['API_KEY']&callback=initMap">
     </script>
   </head>
   <body>
