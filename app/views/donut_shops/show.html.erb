@@ -5,16 +5,15 @@
   <p><%= @shop.description %></p>
   <p id ="address"><%= @shop.address%></p> 
   <p><%=  @shop.website %></p>
-  <% if @donuts != nil %>
-    <p>It has these donuts</p>
-    <%  @donuts.each do |donut| %>
+   <% if @shop.donuts != nil %>
+    <p>It has these donuts: </p>
+    <%@shop.donuts.each do |donut| %>
       <p>Name: <%= donut.name %></p>
       <p>Description: <%= donut.description %></p>
-      <p>Donut Shop: <%= donut_shop.name %> </p>
-      <% end %>
     <% end %>
-    <div id= "map">
-    </div>
+  <% end %>
+  <div id= "map">
+  </div>
 </section>
 <section> 
   <%= render "donuts/new" %>
