@@ -20,15 +20,16 @@ DonutShop.create([{
   website: "thedoughnutvault.tumblr.com/"}])
 
 Donut.create([{
-  name: "Vanilla Creme",
-  description: "Yummy, yummy, yum with sugar",
-  donut_shop_id: 1
-  },
+    name: "Vanilla Creme",
+    description: "Yummy, yummy, yum with sugar",
+    occasion: "Splurge",
+    donut_shop_id: 1},
   {
     name: "Buttermilk Old Fashioned",
     description: "Cake Joy",
-    donut_shop_id: 2
-    }])
+    occasion: "Economy",
+    donut_shop_id: 2 
+  }])
 
 User.create([{
   first_name: "Charlie",

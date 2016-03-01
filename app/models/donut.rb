@@ -5,7 +5,7 @@ class Donut < ActiveRecord::Base
   accepts_nested_attributes_for :donut_shop
   accepts_nested_attributes_for :donut_ratings, allow_destroy: true
 
-  validates :name, :description, :occassion, :type_of_donut, :donut_shop_id, :presence => true
+  validates :name, :description, :occasion, :type_of_donut, :donut_shop_id, :presence => true
   validates :name, uniqueness: { scope: :donut_shop_id } 
 
 end

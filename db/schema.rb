@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 20160301142106) do
   create_table "donuts", force: :cascade do |t|
     t.string   "name"
     t.string   "description"
-    t.string   "occassion"
+    t.string   "occasion"
     t.string   "type_of_donut"
     t.integer  "donut_shop_id"
     t.datetime "created_at",    null: false
