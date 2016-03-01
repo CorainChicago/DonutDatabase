@@ -17,17 +17,19 @@ DonutShop.create([{
   description: "Yum, Blah, Blah Blah, yum", 
   address: "401 1/2 N Franklin St Chicago, IL 60654",
   phone: "(312) 464-9544", 
-  website: "thedoughnutvault.tumblr.com/"}])
+  website: "thedoughnutvault.tumblr.com"}])
 
 Donut.create([{
     name: "Vanilla Creme",
     description: "Yummy, yummy, yum with sugar",
     occasion: "Splurge",
+    type_of_donut: "Yeast",
     donut_shop_id: 1},
   {
     name: "Buttermilk Old Fashioned",
     description: "Cake Joy",
     occasion: "Economy",
+    type_of_donut: "Old Fashion",
     donut_shop_id: 2 
   }])
 
@@ -43,5 +45,6 @@ DonutRating.create([{
   donut_id: 1,
   donut_shop_id: 1,
   score: 4,
-  description: "It was tasty"
+  description: "It was tasty",
+  occasion: "On the way home"
   }])
