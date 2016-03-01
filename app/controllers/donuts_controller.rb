@@ -18,6 +18,7 @@ class DonutsController < ApplicationController
     @donut = Donut.find(params[:id])
     @donut_shop = DonutShop.find(@donut.donut_shop_id)
     @ratings = DonutRating.where(donut_id: session[:donut_id]) 
+    
   end
 
   def index
