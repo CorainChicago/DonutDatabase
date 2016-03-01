@@ -23,7 +23,12 @@ Donut.create([{
   name: "Vanilla Creme",
   description: "Yummy, yummy, yum with sugar",
   donut_shop_id: 1
-  }])
+  },
+  {
+    name: "Buttermilk Old Fashioned",
+    description: "Cake Joy",
+    donut_shop_id: 2
+    }])
 
 User.create([{
   first_name: "Charlie",
