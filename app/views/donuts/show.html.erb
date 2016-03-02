@@ -1,7 +1,7 @@
 <section class="col-xs-12 col-md-12 donut_show ">
   <h2 class="title">Each donut is different each day. </h2>
   <p>Name: <%= @donut.name %></p>
-  <p>Pic: <%= image_tag(@donut.picture_url(:thumb)) unless @donut.picture_url(:thumb).blank? %></p>
+  <p><%= image_tag(@donut.picture_url(:thumb)) unless @donut.picture_url(:thumb).blank? %></p>
   <p>Description: <%= @donut.description %></p>
   <p>Donut Shop: <%= @donut.donut_shop.name %> </p>
   </section> 
