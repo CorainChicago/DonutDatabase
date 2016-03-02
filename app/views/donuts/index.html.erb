@@ -1,11 +1,12 @@
 
-  <h2 class="title">Donuts<h2>
-    <div class="row top-buffer">
+  <h2 class="top-buffer title_page">Donuts<h2>
+    <div class="row top-buffer donut">
       <% @donuts.each do |donut| %>
         <section class="col-md-3 col-md-offset-1 donut">
-          <h4>Name: <%= link_to donut.name, donut_path(donut), id: donut.name  %></h4>
-          <h5>Description: <%= donut.description %></h5>
-          <h5>From: <%= donut.donut_shop.name %></h5>   
+          <div>
+            <h4><%= link_to donut.name, donut_path(donut), id: donut.name  %></h4>
+            <h5>From: <%= link_to donut.donut_shop.name %></h5> 
+          </div>    
         </section>  
       <% end %>
     </div>
