@@ -2,26 +2,63 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body{
+  background-color:#def;
+  background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%),
+  radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%);
+  background-size:80px 80px;
+  background-position:0 0, 40px 40px; 
+}
+
+.title_page{
+  text-align: center;
+  background-color: white;
+  border-radius: 30%;
+  width: 4.5em;
+  margin-left: 5%;
+}
+
 textarea{
   width: 20.0em;
   height: 10.0em;
 }
-.donut{
-  text-align: center;
-  border: 0.5em groove #FF69B4;
-  border-radius: 50%;
-  margin-bottom: 5%;
-  padding: 2%;
-}
-section .donut{
+
+@media (min-width: 900px) {
+  .donut section{
+    background-color: white;
+    text-align: center;
+    border: 0.5em groove #FF69B4;
+    border-radius: 50%;
+    margin-bottom: 5%;
+    padding: 2%;
+  }
+  div .donut{
+    width: 300px;
+    height: 5%;
+    padding: 5%;
+  }
   
 }
-div .donut{
-  width: 30%;
-  height: 5%;
-  padding: 5%;
-}
 
+@media (max-width: 899px) {
+  .donut section{
+    background-color: white;
+    text-align: center;
+    border: 0.5em groove #FF69B4;
+    border-radius: 40%;
+    margin-bottom: 2%;
+    margin-right: 0 auto;
+    margin-left: 0 auto;
+  }
+  div .donut {
+    text-align: center;
+    margin-left: 2.5em;
+    height: 200px;
+    width: 230px;
+    padding: 5%;
+  }
+  
+}
 .donut_show{
   text-align: center;
 }
