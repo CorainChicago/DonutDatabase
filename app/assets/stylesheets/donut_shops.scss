@@ -3,6 +3,43 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+// big screens
+@media (min-width: 900px) {
+  .donut_shop{
+    background-color: whitesmoke;
+    border-radius: 20%;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    padding: 2.5em;
+    margin-left: 20%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+  }
+  
+  #map{
+    margin: 30% 40% 15% 40%;
+  }  
+  
+}
+
+//little screen
+@media (max-width: 899px) {
+  .donut_shop{
+    background-color: whitesmoke;
+    border-radius: 20%;
+    text-align: center;
+    width: 30em;
+    height: 40em;
+    padding: 2.5em;
+    margin-left: 5%;
+    margin-left: 5%;
+    margin-bottom: 20%;
+  }
+    
+  
+}
+
 
 .new_donut_shop{
   text-align: center;
