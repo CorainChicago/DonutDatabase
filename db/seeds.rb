@@ -14,23 +14,44 @@ DonutShop.create([{
   website: "doritedonuts.com"},
   {
   name: "The Doughnut Vault", 
-  description: "Yum, Blah, Blah Blah, yum", 
+  description: "A hole in the wall where they have meditated on the whole donut experience and only give you the best.", 
   address: "401 1/2 N Franklin St Chicago, IL 60654",
   phone: "(312) 464-9544", 
-  website: "thedoughnutvault.tumblr.com"}])
+  website: "thedoughnutvault.tumblr.com"},
+
+  {
+  name: "Stans Donuts", 
+  description: "Flavored donuts with an emphasis on the filling and toppings.  They have a cake donut.", 
+  address: "1560 N. Damen Avenue Chicago, IL 660622",
+  phone: "(773) 360-7386", 
+  website: "http://www.stansdonutschicago.com/"},
+  {
+  name: "M 2 Cafe", 
+  description: "A coffee shop with donuts.  I don't know where the donuts came from, but they were pretty good (and organic).", 
+  address: "850 W Jackson Blvd, Chicago, IL 60607",
+  phone: "(312) 265-1824", 
+  website: "morganstreetcafe.com"},
+  {
+  name: "Glazed and Infused", 
+  description: "Focused on the wow factor of toppings and glazes of their donuts. ", 
+  address: " 813 W Fulton Market, Chicago, IL 60607",
+  phone: "(312) 226-5556", 
+  website: "goglazed.com"}
+
+  ])
 
 Donut.create([{
     name: "Vanilla Creme",
     description: "Yummy, yummy, yum with sugar",
     occasion: "Splurge",
     type_of_donut: "Yeast",
-    donut_shop_id: 1},
+    donut_shop_id: 2},
   {
     name: "Buttermilk Old Fashioned",
     description: "Cake Joy",
     occasion: "Economy",
     type_of_donut: "Old Fashion",
-    donut_shop_id: 2 
+    donut_shop_id: 1 
   }])
 
 User.create([{
