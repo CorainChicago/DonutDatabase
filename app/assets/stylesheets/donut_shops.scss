@@ -2,7 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+.donut_shop{
+  background-color: whitesmoke;
+  border-radius: 20%;
+  text-align: center;
+  width: 30em;
+  height: 40em;
+  padding: 2.5em;
+  margin-left: 20%;
+  margin-left: 20%;
+  margin-bottom: 40%;
+}
 
 .new_donut_shop{
   text-align: center;
@@ -33,3 +43,7 @@
   margin-bottom: 5%;
 }
 
+#map{
+  height: 320px;
+  width: 400px;
+}
