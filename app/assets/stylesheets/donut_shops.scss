@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-// big screens
+
 @media (min-width: 900px) {
   .donut_shop{
     background-color: whitesmoke;
@@ -23,7 +23,6 @@
   
 }
 
-//little screen
 @media (max-width: 899px) {
   .donut_shop{
     background-color: whitesmoke;
@@ -35,11 +34,8 @@
     margin-left: 5%;
     margin-left: 5%;
     margin-bottom: 20%;
-  }
-    
-  
+  }  
 }
-
 
 .new_donut_shop{
   text-align: center;
