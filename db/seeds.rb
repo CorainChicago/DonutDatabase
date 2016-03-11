@@ -18,7 +18,6 @@ DonutShop.create([{
   address: "401 1/2 N Franklin St Chicago, IL 60654",
   phone: "(312) 464-9544", 
   website: "thedoughnutvault.tumblr.com"},
-
   {
   name: "Stans Donuts", 
   description: "Flavored donuts with an emphasis on the filling and toppings.  They have a cake donut.", 
@@ -46,13 +45,21 @@ Donut.create([{
     occasion: "Splurge",
     type_of_donut: "Yeast",
     donut_shop_id: 2},
-  {
+    {
     name: "Buttermilk Old Fashioned",
     description: "Cake Joy",
     occasion: "Economy",
     type_of_donut: "Old Fashion",
     donut_shop_id: 1 
-  }])
+    },
+    {
+    name: "Vanilla with glaze and prinkles",
+    description: "A tasty (and organic) delight with surprisingly good texture for being found at a coffee shop",
+    occasion: "Economy",
+    type_of_donut: "Old Fashion",
+    donut_shop_id: 4 
+    }
+  ])
 
 User.create([{
   first_name: "Charlie",
