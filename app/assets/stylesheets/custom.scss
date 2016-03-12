@@ -11,12 +11,20 @@ body{
 }
 
 #donut_pic {
-  border: 3.0em solid white;
-  border-radius: 30%;
+  border: 2.0em solid white;
+  border-radius: 40%;
   height: 30.0em;
   width: auto;
-  margin-right: auto;
-  margin-left: 40%;
+}
+
+div .welcome{
+  text-align: center;
+  width: 60%;
+}
+
+.welcome h2{
+  background-color: white;
+  width: 10.0em;
 }
 
 
