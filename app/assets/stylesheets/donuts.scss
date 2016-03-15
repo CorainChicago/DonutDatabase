@@ -2,23 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@media (min-width: 900px) {
+@media (min-width: 1099px) {
   .donut section{
     background-color: white;
-    text-align: center;
     border: 0.5em groove #FF69B4;
     border-radius: 50%;
-    margin-bottom: 5%;
-    padding: 2%;
   }
-  div .donut{
-    width: 300px;
-    height: 5%;
-    padding: 5%;
+
+  div .donut {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+ div .donut div{
+    text-align: center;
+    width: 8.0em;
+    height: 8.0em;
+    padding-top: 30%;
   } 
 }
 
-@media (max-width: 899px) {
+@media (max-width: 1098px) {
   .donut section{
     background-color: white;
     text-align: center;
@@ -30,7 +34,8 @@
   }
   div .donut {
     text-align: center;
-    margin-left: 2.5em;
+    margin-left: 30%;
+    margin-right: 30%;
     height: 200px;
     width: 230px;
     padding: 5%;
