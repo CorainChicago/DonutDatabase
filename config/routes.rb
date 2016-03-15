@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root :to => 'donuts#index'
+  root :to => 'welcome#index'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'

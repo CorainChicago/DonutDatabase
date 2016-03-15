@@ -10,6 +10,27 @@ body{
   background-position:0 0, 40px 40px; 
 }
 
+#donut_pic {
+  border: 2.0em solid white;
+  border-radius: 40%;
+  height: 30.0em;
+  width: auto;
+}
+
+div .welcome{
+  text-align: center;
+  width: 60%;
+}
+
+.welcome h2{
+  background-color: white;
+  border: 0.2em double black;
+  width: 10.0em;
+  padding: 3%;
+  margin: 10%;
+}
+
+
 .title_page{
   text-align: center;
   background-color: white;
