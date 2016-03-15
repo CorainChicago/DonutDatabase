@@ -11,7 +11,7 @@
       <div class="center-block rating">
         <%= r.score %></br>
         <%= r.description %>
-        <%= User.find(r.user_id).first_name %>
+         - <%= User.find(r.user_id).first_name %>
       </div>
     <% end %>
   <% end %>

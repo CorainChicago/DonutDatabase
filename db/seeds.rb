@@ -68,11 +68,42 @@ User.create([{
   password: "love"
   }])
 
-DonutRating.create([{
+DonutRating.create([
+  {
   user_id: 1,
   donut_id: 1,
-  donut_shop_id: 1,
+  donut_shop_id: 2,
   score: 4,
   description: "It was tasty",
   occasion: "On the way home"
-  }])
+  },
+   {
+  user_id: 1,
+  donut_id: 2,
+  donut_shop_id: 1,
+  score: 3,
+  description: "It was tasty",
+  occasion: "Early morning treat"
+  },
+   {
+  user_id: 1,
+  donut_id: 3,
+  donut_shop_id: 1,
+  score: 5,
+  description: "Perfect texture",
+  occasion: "After a long day schlepping around Chicago."
+  }
+  ])
+
+
+
+
+
+
+
+
+
+
+
+
+
