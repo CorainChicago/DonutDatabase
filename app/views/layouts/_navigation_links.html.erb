@@ -2,6 +2,7 @@
   <li> <%= link_to "Donuts", donuts_path %></li>
   <li> <%= link_to "Donut Shops", donut_shops_path %></li>
   <% if logged_in == true %>
+    <li><%= link_to "Profile", user_path(session[:user_id])%></li>
     <li><%= link_to "Logout", logout_path, method: :delete %></li>
   <% else %>
     <li> <%= link_to "Login", login_path %></li>
