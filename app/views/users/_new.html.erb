@@ -1,0 +1,45 @@
+
+<div class="row-fluid ">
+  <div class="span4 well">
+    <%= form_for @user, :html => {:class => "form-horizontal center"} do |f| %> 
+      <div class="form-group">
+        <%= f.label :first_name, class:"control-label col-sm-2" %>
+        <div class="col-sm-6">
+          <%= f.text_field :first_name, class:"form-control" %><br />
+        </div>
+      </div>
+      <div class="form-group">
+        <%= f.label :last_name, class:"control-label col-sm-2" %>
+        <div class="col-sm-6">
+          <%= f.text_field :last_name, class:"form-control" %><br />
+        </div>
+      </div>
+      <div class="form-group">
+        <%= f.label :email, class:"control-label col-sm-2" %>
+        <div class="col-sm-6">
+          <%= f.text_field :email, class:"form-control" %><br />
+        </div>
+      </div>
+      <div class="form-group">
+        <%= f.label :password, class:"control-label col-sm-2" %>
+        <div class="col-sm-6">
+          <%= f.password_field :password, class:"form-control" %><br />
+        </div>
+      </div>
+      <div class="form-group"> <br />
+      <%= f.label :password_confirmation, class:"control-label col-sm-2" %>
+        <div class="col-sm-6">
+          <%= f.password_field :password_confirmation, class:"form-control" %><br />
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <%= f.submit %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+ 

@@ -22,7 +22,16 @@ class UsersController < ApplicationController
   end
 
   def update
-    
+    @user = @user = User.find(session[:user_id])
+    @user.update(user_params)
+    if @user.save
+      session[:user_id] = @user.id
+      redirect_to root_url, :notice => "You updated your profile."
+    else
+      @errors = @user.errors.full_messages
+      render "users/new"
+    end 
+
   end
 
   private
