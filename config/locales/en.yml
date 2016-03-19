@@ -21,3 +21,7 @@
 
 en:
   hello: "Hello world"
+
+S3_BUCKET=charlielikesdonuts
+AWS_ACCESS_KEY_ID=AKIAJTN7XTYSOOPPJFUA
+AWS_SECRET_ACCESS_KEY=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
