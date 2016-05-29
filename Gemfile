@@ -14,10 +14,10 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'aws-sdk', '~> 2'
 
 # Carrierwave is for photo upload
-# gem 'carrierwave'
+gem 'carrierwave'
 
 # # Cloudinary is for photos too
-# gem 'cloudinary'
+ gem 'cloudinary'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

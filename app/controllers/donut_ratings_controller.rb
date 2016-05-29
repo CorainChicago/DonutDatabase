@@ -1,6 +1,5 @@
 class DonutRatingsController < ApplicationController
 
-
   def create
     @rating = DonutRating.new(rating_params)
     @rating.donut_id = params[:donut_id]
