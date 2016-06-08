@@ -3,6 +3,10 @@ require 'rails_helper'
 RSpec.describe DonutShopsController,  :type => :controller do
   render_views
 
+  let!(:shop) { DonutShop.create!(name: Faker::Lorem.word, description: Faker::Lorem.sentence, address: Faker::Address, phone: Faker::PhoneNumber.phone_number, website: Faker::Internet.url) }
+  let!(:donut)  { Donut.create!(name: Faker::Lorem.word, occasion: "Splurge", description: Faker::Lorem.sentence, type_of_donut: "Yeast", donut_shop_id: 1)}
+
+
 
   describe "GET #index" do
 
@@ -15,7 +19,6 @@ RSpec.describe DonutShopsController,  :type => :controller do
   describe "Get #show" do   
   
     it "renders the show page" do 
-     shop = DonutShop.create(name: Faker::Lorem.word, description: Faker::Lorem.sentence, address: Faker::Address, phone: Faker::PhoneNumber.phone_number, website: Faker::Internet.url, donut_id: 1)
       get :show, { :id => shop.to_param }
       expect(response.status).to eq(200)
     end
@@ -25,16 +28,15 @@ RSpec.describe DonutShopsController,  :type => :controller do
     context 'with valid attributes' do
 
       it "increases the donut shop count" do
-        donut_shop_attributes = { name: Faker::Lorem.word, description: Faker::Lorem.sentence, address: Faker::Address, phone: "333-333-3983", website: Faker::Internet.url, donut_id: 1}
-
+        donut_shop_attributes = { name: Faker::Lorem.word, description: Faker::Lorem.sentence, address: Faker::Address.street_address, phone: Faker::PhoneNumber.phone_number, website: Faker::Internet.url}
         expect { 
           post :create, donut_shop: donut_shop_attributes
-          }.to change { DonutShop.count }.from(0).to 1
+          }.to change{ DonutShop.count }.from(1).to 2
       end
     end
 
     context 'with invalid params' do 
-      donut_shop_attributes = { name: Faker::Lorem.word, description: Faker::Lorem.sentence, address: Faker::Address, website: Faker::Internet.url }
+      donut_shop_attributes = { name: Faker::Lorem.word, description: Faker::Lorem.sentence, address: Faker::Address.street_address, website: Faker::Internet.url }
 
       it "renders a new donut shop form" do  
           post :create, donut_shop: donut_shop_attributes

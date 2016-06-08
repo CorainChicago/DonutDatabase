@@ -8,6 +8,4 @@ class Donut < ActiveRecord::Base
   validates :name, :description, :donut_shop_id, :presence => true
   validates :name, uniqueness: { scope: :donut_shop_id } 
 
-  
-
 end

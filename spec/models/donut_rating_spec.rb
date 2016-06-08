@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe DonutRating do 
-  let(:donut_rating) { DonutRating.new(score: 5, description: Faker::Lorem.sentence, user_id: 1, donut_shop_id: 1)}
+  let(:donut_rating) { DonutRating.create!(score: 5, description: Faker::Lorem.sentence, user_id: 1, donut_shop_id: 1, donut_id: 1)}
   
   describe "validations" do 
     
