@@ -7,6 +7,4 @@ class User < ActiveRecord::Base
   validates_confirmation_of :password, :message => "They need to match"
 
 
- 
-
 end

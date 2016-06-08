@@ -28,7 +28,7 @@ class DonutsController < ApplicationController
   private
 
   def donut_params
-    params.require(:donut).permit(:name, :description, :occassion, :type_of_donut, :donut_shop_id, :picture)
+    params.require(:donut).permit(:name, :description, :occasion, :type_of_donut, :donut_shop_id, :picture)
   end
 
 

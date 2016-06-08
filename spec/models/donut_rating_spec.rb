@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe DonutRating do 
-  let(:donut_rating) { DonutRating.new(score: 5, description: Faker::Lorem.sentence, user_id: 1, donut_shop_id: 1)}
+  let(:donut_rating) { DonutRating.create!(score: 5, description: Faker::Lorem.sentence, user_id: 1, donut_shop_id: 1, donut_id: 1)}
   
   describe "validations" do 
     
@@ -11,9 +11,18 @@ describe DonutRating do
     end
 
     it "throws an error when the donut_shop_id is missing" do
-      donut_rating2 = DonutRating.new(score: 5, description: Faker::Lorem.sentence, user_id: 1)
-      donut_rating2.valid?
-      expect(donut_rating2.errors.messages[:donut_shop_id][0]).to eq "can't be blank"
+      donut_rating_2 = DonutRating.new(score: 5, description: Faker::Lorem.sentence, user_id: 1, donut_id: 1)
+      donut_rating_2.valid?
+      expect(donut_rating_2.errors).to have_key (:donut_shop_id)
     end
+  end
+
+  describe "average_rating" do
+    it "returns the average rating" do 
+      DonutRating.create!(score: 3, description: Faker::Lorem.sentence, user_id: 1, donut_shop_id: 1, donut_id: 2)
+      DonutRating.create!(score: 4, description: Faker::Lorem.sentence, user_id: 1, donut_shop_id: 1, donut_id: 2)
+      DonutRating.create!(score: 5, description: Faker::Lorem.sentence, user_id: 1, donut_shop_id: 1, donut_id: 2)
+      expect(DonutRating.average_rating(2)).to eq 4
+    end 
   end
 end

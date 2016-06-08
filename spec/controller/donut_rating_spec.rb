@@ -12,7 +12,7 @@ RSpec.describe DonutRatingsController, :type => :controller do
 
     context "when invalid params are passed" do
       it "the donut rating is not saved" do
-        donut =  Donut.create(name: Faker::Lorem.word, occassion: "Splurge", description: Faker::Lorem.sentence, type_of_donut: "Yeast", donut_shop_id: 1) 
+        donut =  Donut.create(name: Faker::Lorem.word, occasion: "Splurge", description: Faker::Lorem.sentence, type_of_donut: "Yeast", donut_shop_id: 1) 
         expect { post :create, donut_id: donut.id,  donut_rating: {description: Faker::Lorem.sentence, donut_shop_id: 1, donut_id: 1 } }.to_not change(DonutRating, :count)
       end
     end

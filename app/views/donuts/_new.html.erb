@@ -1,60 +1,62 @@
 <div class="row col-md-12">
   <div class="span4 well">
     <div class="new_donut">
-  <h2>Add a new donut</h2>
-  <%= form_for Donut.new, :html => {:class=>"form-horizontal center", :role=>"form"} do |f| %>
-  <div class="form-group">
-    <%= f.label :name, class:"control-label col-sm-2" %>
-    <div class="col-sm-10">
-      <%= f.text_field :name %>
-    </div>   
-  </div>
-  <div class="form-group">
-    <%= f.label :type_of_donut, class:"control-label col-sm-2" %>
-    <div class="col-sm-10">
-      <div class="checkbox">
-        <%= f.radio_button :type_of_donut, 'Yeast', :checked => false %> Yeast 
-        <%= f.radio_button :type_of_donut, 'Old Fashion/Cake', :checked => false %> Old Fashion/Cake 
-        <%= f.radio_button :type_of_donut, 'Speciality', :checked => false %> Speciality
-        <%= f.radio_button :type_of_donut, 'Glutton Free', :checked => false %> Glutton Free 
+      <h2>Add a new donut</h2>
+      <%= form_for Donut.new, :html => {:class=>"form-horizontal center", :role=>"form"} do |f| %>
+      <div class="form-group">
+        <%= f.label :name, class:"control-label col-sm-2" %>
+        <div class="col-sm-10">
+          <%= f.text_field :name %>
+        </div>   
       </div>
+      <div class="form-group">
+        <%= f.label :type_of_donut, class:"control-label col-sm-2" %>
+        <div class="col-sm-10">
+          <div class="checkbox">
+            <%= f.radio_button :type_of_donut, 'Yeast', :checked => false %> Yeast 
+            <%= f.radio_button :type_of_donut, 'Old Fashion/Cake', :checked => false %> Old Fashion/Cake 
+            <%= f.radio_button :type_of_donut, 'Speciality', :checked => false %> Speciality
+            <%= f.radio_button :type_of_donut, 'Glutton Free', :checked => false %> Glutton Free 
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= f.label :occasion, class:"control-label col-sm-2" %>
+        <div class="col-sm-8">
+          <%= f.radio_button :occasion , 'Splurge', :checked => false %> Splurge 
+          <%= f.radio_button :occasion , 'Value', :checked => false %> Value
+          <%= f.radio_button :occasion , 'Geographic Desirability', :checked => false %> Geographic Desirability </br>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= f.label :description, class:"control-label col-sm-3" %>
+        <div class="col-sm-6">
+          <%= f.text_area :description, spellcheck:"true" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-8">
+          <%= collection_select(:donut, :donut_shop_id, DonutShop.all, :id, :name) %></br>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= f.label :picture, class:"control-label col-sm-2" %>
+        <div class="col-sm-10">
+          <%= f.hidden_field(:picture_cache) %>
+          <%= f.file_field(:picture) %>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-8">
+          <%= submit_tag "Create a Donut" %>
+         </div> 
+      </div>
+      <% end %>
     </div>
   </div>
-  <div class="form-group">
-    <%= f.label :occasion, class:"control-label col-sm-2" %>
-    <div class="col-sm-8">
-      <%= f.radio_button :occasion , 'Splurge', :checked => false %> Splurge 
-      <%= f.radio_button :occasion , 'Value', :checked => false %> Value
-      <%= f.radio_button :occasion , 'Geographic Desirability', :checked => false %> Geographic Desirability </br>
-    </div>
-  </div>
-  <div class="form-group">
-    <%= f.label :description, class:"control-label col-sm-3" %>
-    <div class="col-sm-6">
-      <%= f.text_area :description, spellcheck:"true" %>
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-8">
-      <%= collection_select(:donut, :donut_shop_id, DonutShop.all, :id, :name) %></br>
-    </div>
-  </div>
-  <div class="form-group">
-    <%= f.label :picture, class:"control-label col-sm-2" %>
-    <div class="col-sm-10">
-      <%= f.hidden_field(:picture_cache) %>
-      <%= f.file_field(:picture) %>
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-8">
-      <%= submit_tag "Create a Donut" %>
-     </div> 
-  </div>
-  <% end %>
-</div>
-</div>
-</div>  
+</div> 
+
+ 
 
 
 

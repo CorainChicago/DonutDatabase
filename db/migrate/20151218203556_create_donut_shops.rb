@@ -6,7 +6,6 @@ class CreateDonutShops < ActiveRecord::Migration
       t.string :address
       t.string :phone
       t.string :website
-      t.references :donut
 
       t.timestamps null: false
     end
