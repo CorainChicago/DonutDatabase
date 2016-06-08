@@ -33,7 +33,6 @@ ActiveRecord::Schema.define(version: 20160301142106) do
     t.string   "address"
     t.string   "phone"
     t.string   "website"
-    t.integer  "donut_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.string   "picture"

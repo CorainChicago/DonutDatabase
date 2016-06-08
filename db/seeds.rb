@@ -38,28 +38,28 @@ DonutShop.create([{
   website: "goglazed.com"}
 
   ])
-
 Donut.create([{
     name: "Vanilla Creme",
     description: "Yummy, yummy, yum with sugar",
     occasion: "Splurge",
     type_of_donut: "Yeast",
-    donut_shop_id: 2},
+    donut_shop_id: 1
+    },
     {
     name: "Buttermilk Old Fashioned",
     description: "Cake Joy",
     occasion: "Economy",
     type_of_donut: "Old Fashion",
-    donut_shop_id: 1 
-    },
+    donut_shop_id: 2},
     {
     name: "Vanilla with glaze and prinkles",
     description: "A tasty (and organic) delight with surprisingly good texture for being found at a coffee shop",
     occasion: "Economy",
     type_of_donut: "Old Fashion",
-    donut_shop_id: 4 
+    donut_shop_id: 3 
     }
   ])
+
 
 User.create([{
   first_name: "Charlie",
