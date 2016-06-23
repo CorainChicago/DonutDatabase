@@ -1,15 +1,21 @@
- <h2 class="title_page">Donut Shops<h2>
-    <div class="row top-buffer donut">
-      <% @shops.each do |shop| %>
-      <section class="col-md-3 col-md-offset-1 top-buffer donut_shop">
-        <h4><%= link_to shop.name, donut_shop_path(shop) %> </h4>
-        <h5>Description: <%= shop.description %></h5>
-        <h5 id = 'address'>Address: <%= shop.address %></h5>
-        <div ="map"></div>
-      </section>
-    <% end %>
-    </div>
+<h2 class="title_page">Donut Shops<h2>
+<div class="row top-buffer donut">
+  <% @shops.each do |shop| %>
+  <section class="col-md-3 col-md-offset-1 top-buffer donut_shop">
+    <h4><%= link_to shop.name, donut_shop_path(shop) %> </h4>
+    <h5>Description: <%= shop.description %></h5>
+    <h5 id = 'address'>Address: <%= shop.address %></h5>
+    <div ="map"></div>
+  </section>
+<% end %>
+</div>
 
-<section class="donut_shop_form">
-  <%= render  "donut_shops/new" %>
-</section>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <% if logged_in %>
+      <%= render  "donut_shops/new" %>
+    <% else %>
+      <%= render partial: 'users/login_needed' %>
+    <% end %>
+  </div> 
+</div>  
