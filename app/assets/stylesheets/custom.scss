@@ -3,23 +3,23 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
-  background-color:#def;
+  background-color: #def;
   background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%),
   radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%);
   background-size:80px 80px;
   background-position:0 0, 40px 40px; 
+  width: auto;
 }
 
 #donut_pic {
   border: 2.0em solid white;
   border-radius: 40%;
-  height: 30.0em;
-  width: auto;
+  height: auto;
+  width: 90%;
 }
 
 div .welcome{
   text-align: center;
-  width: 60%;
 }
 
 .welcome h2{
