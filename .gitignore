@@ -12,5 +12,6 @@
 !/log/.keep
 /tmp
 /.env
-/config/local_en.yml
+/config/local_env.yml
 /.byebug_history
+/config/secrets.yml
