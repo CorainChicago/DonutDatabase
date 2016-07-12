@@ -9,15 +9,11 @@ gem 'sass-rails', '~> 5.0'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 
-# Convert to S3
 
-gem 'aws-sdk', '~> 2'
-
-# Carrierwave is for photo upload
-gem 'carrierwave'
-
-# # Cloudinary is for photos too
- gem 'cloudinary'
+# For photo upload
+gem 'carrierwave','0.10.0'
+gem 'fog'
+gem "mini_magick"
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

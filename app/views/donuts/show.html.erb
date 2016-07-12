@@ -5,7 +5,7 @@
     <p><%= image_tag(@donut.picture_url(:thumb)) unless @donut.picture_url(:thumb).blank? %></p>
     <p>Description: <%= @donut.description %></p>
     <p>Donut Shop: <%= @donut.donut_shop.name %> </p>
-  <section class="col-xs-12 center-block">
+  <section class="col-md-8 col-md-offset-2 ">
     <% if @ratings != nil %>
       <% @ratings.each do |r| %>
         <div class="center-block rating">
@@ -17,7 +17,9 @@
     <% end %>
    </section> 
   </section> 
-<section class="col-md-8 col-md-offset-2 rating footer">
-  <%= render "donut_ratings/new" %>
-</section>
+</div>  
+<div class="row">  
+  <section class="col-md-8 col-md-offset-2">
+    <%= render "donut_ratings/new" %>
+  </section>
 </div>
