@@ -36,7 +36,8 @@
       </div>
       <div class="form-group">
         <div class="col-sm-8">
-          <%= collection_select(:donut, :donut_shop_id, DonutShop.all, :id, :name) %></br>
+          <%= collection_select(:donut, :donut_shop_id, DonutShop.all, :id, :name) %>
+         OR <button class="new_shop"> Add a new donut shop</button></br>
         </div>
       </div>
       <div class="form-group">
