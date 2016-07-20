@@ -16,7 +16,7 @@
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
     <% if logged_in %>
-      <%= render  "donut_shops/new" %>
+      <%= render  "donut_shops/form" %>
     <% else %>
       <%= render partial: 'users/login_needed' %>
     <% end %>

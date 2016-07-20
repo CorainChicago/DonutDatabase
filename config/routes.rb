@@ -10,6 +10,8 @@ Rails.application.routes.draw do
     resources :donut_ratings
   end
   resources :donut_shops
+  get 'new_donut_shop_form' => 'donut_shops#new_donut_shop_form'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,5 +1,6 @@
 class DonutShopsController < ApplicationController
 
+
   def index
     @shops = DonutShop.all
   end
@@ -16,6 +17,12 @@ class DonutShopsController < ApplicationController
     else
       @errors = @shop.errors.full_messages
       render 'donut_shops/new'
+    end
+  end
+
+  def new_donut_shop_form
+    respond_to do |format|
+      format.js 
     end
   end
 
