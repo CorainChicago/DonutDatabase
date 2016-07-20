@@ -3,7 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
 .donut_shop{
   text-aligned: center;
   padding: 10%;
@@ -18,27 +17,25 @@
   text-align: center;
   border: 0.5em groove #FF69B4;
   float: right;
-  width: 35%;
   margin-right: 30%;
   margin-left: 40%;
 }
 
 .new_donut_shop input {
-  font-size: 1.4em;
   border: solid 0.15em #c9c9c9;
-  height: 1.3em;
   margin-top: 5%;
-  padding: 1.5%;  
+  margin-bottom: 10%;  
 }
 
 .new_donut_shop label{
   display: block;
   margin-top: 5%;
 }
+
 .new_donut_shop textarea{
   border: solid 0.15em #c9c9c9;
   height: 4.5em;
-  width: 40%;
+  width: auto;
   margin-top: 5%;
   margin-bottom: 5%;
 }
