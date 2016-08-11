@@ -17,13 +17,14 @@
   text-align: center;
   border: 0.5em groove #FF69B4;
   float: right;
+  margin-top: 10%;
   margin-right: 30%;
   margin-left: 40%;
 }
 
 .new_donut_shop input {
   border: solid 0.15em #c9c9c9;
-  margin-top: 5%;
+  margin-top: 10%;
   margin-bottom: 10%;  
 }
 
@@ -38,5 +39,10 @@
   width: auto;
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+#donut_shop_picture{
+  height: 1.5em;
+  padding-top: 10px;
 }
 

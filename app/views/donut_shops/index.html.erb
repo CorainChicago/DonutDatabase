@@ -2,7 +2,7 @@
 <h2 class="title_page">Donut Shops<h2>
 <div class="row top-buffer donut">
   <% @shops.each do |shop| %>
-  <section class="col-md-3 col-md-offset-1 top-buffer">
+  <section class="col-md-3 col-md-offset-2 top-buffer">
     <div class="donut_shop">
       <h4><%= link_to shop.name, donut_shop_path(shop) %> </h4>
       <h5>Description: <%= shop.description %></h5>

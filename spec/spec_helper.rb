@@ -14,6 +14,9 @@
 #
 # The `.rspec` file also contains a few flags that are not defaults but that
 # users commonly want.
+# add simplecov gem 
+require 'simplecov'
+SimpleCov.start
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
@@ -89,4 +92,8 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+
+config.after :all do
+  ActiveRecord::Base.subclasses.each(&:delete_all)
+end
 end

@@ -1,38 +1,38 @@
-<div class="row col-md-10 col-md-offset-1">
-  <div class="span4 well">
+<div class="row">
+  <div class="span6 well">
     <%= form_for DonutShop.new, :html => {:class => "form-horizontal center"} do |f| %>
         <div class="form-group">
-          <%= f.label :name, class:"control-label col-sm-4" %>
+          <%= f.label :name, class:"control-label col-sm-2 col-sm-offset-2" %>
           <div class="col-sm-4">
             <%= f.text_field :name %>
           </div>
         </div>
         <div class="form-group">  
-          <%= f.label :description, class:"control-label col-sm-4" %></br>
+          <%= f.label :description, class:"control-label col-sm-2 col-sm-offset-2" %></br>
           <div class="col-sm-4">
             <%= f.text_area :description, spellcheck: "true" %>
           </div>
         </div>
         <div class="form-group">
-          <%= f.label :address, class:"control-label col-sm-4" %>
+          <%= f.label :address, class:"control-label col-sm-2 col-sm-offset-2" %>
           <div class="col-sm-4"> 
             <%= f.text_field :address %>
          </div>
         </div>
         <div class="form-group"> 
-          <%= f.label :phone, class:"control-label col-sm-4" %>
+          <%= f.label :phone, class:"control-label col-sm-2 col-sm-offset-2" %>
           <div class="col-sm-4">
             <%= f.text_field :phone %>
           </div>
         </div>
         <div class="form-group">
-          <%= f.label :website, class:"control-label col-sm-4" %>
+          <%= f.label :website, class:"control-label col-sm-2 col-sm-offset-2" %>
           <div class="col-sm-4">
             <%= f.text_field :website %>
           </div>
         </div>
         <div class="form-group">
-          <%= f.label :picture, class:"control-label col-sm-4" %>
+          <%= f.label :picture, class:"control-label col-sm-2 col-sm-offset-2" %>
           <div class="col-sm-4">
             <%= f.hidden_field(:picture_cache) %>
             <%= f.file_field(:picture) %>
