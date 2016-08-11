@@ -1,3 +1,4 @@
+require 'support/spec_test_helper'
 class DonutRatingsController < ApplicationController
 
   def create
