@@ -6,8 +6,6 @@ RSpec.describe DonutShopsController,  :type => :controller do
   let!(:shop) { DonutShop.create!(name: Faker::Lorem.word, description: Faker::Lorem.sentence, address: Faker::Address, phone: Faker::PhoneNumber.phone_number, website: Faker::Internet.url) }
   let!(:donut)  { Donut.create!(name: Faker::Lorem.word, occasion: "Splurge", description: Faker::Lorem.sentence, type_of_donut: "Yeast", donut_shop_id: 1)}
 
-
-
   describe "GET #index" do
 
     it "renders the index page" do 
@@ -42,7 +40,6 @@ RSpec.describe DonutShopsController,  :type => :controller do
           post :create, donut_shop: donut_shop_attributes
           expect(response).to render_template(:new)
       end
-
     end
   end
 end

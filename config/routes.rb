@@ -10,6 +10,17 @@ Rails.application.routes.draw do
     resources :donut_ratings
   end
   resources :donut_shops
+  get 'new_donut_shop_form' => 'donut_shops#new_donut_shop_form'
+
+  namespace :api do
+    namespace :v1 do
+      resources :users, only: [:index, :create, :show, :update, :destroy]
+      resources :donuts, only: [:index, :create, :show, :update, :destroy]
+      resources :donut_shops, only: [:index, :create, :show, :update, :destroy]
+      resources :donut_ratings, only: [:index, :create, :show, :update, :destroy]
+    end
+  end
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
