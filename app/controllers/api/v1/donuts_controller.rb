@@ -1,7 +1,11 @@
 class Api::V1::DonutsController < Api::V1::BaseController
   def show
-    user = Donut.find(params[:id])
+    donut = Donut.find(params[:id])
+    render(json: Api::V1::DonutSerializer.new(donut).to_json)
+  end
 
-    render(json: Api::V1::UserSerializer.new(user).to_json)
+   def index
+    donuts = Donut.all
+    render(json: donuts.each{|d| Api::V1::DonutSerializer.new(d).to_json})
   end
 end
