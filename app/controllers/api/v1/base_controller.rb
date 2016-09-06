@@ -2,6 +2,7 @@ class Api::V1::BaseController < ApplicationController
   protect_from_forgery with: :null_session
 
   before_action :destroy_session
+  before_filter :authenticate_user!
   rescue_from ActiveRecord::RecordNotFound, with: :not_found
 
   def destroy_session
@@ -13,21 +14,22 @@ class Api::V1::BaseController < ApplicationController
     return api_error(status: 404, errors: 'Sorry, the record was not found')
   end
 
-  # private
-  #   def authenticate_user_from_token!
-  #     if !@json['api_token']
-  #       render nothing: true, status: :unauthorized
-  #     else
-  #       @user = nil
-  #       User.find_each do |u|
-  #         if Devise.secure_compare(u.api_token, @json['api_token'])
-  #          @user = u
-  #        end
-  #      end
-  #    end
-  #  end
+ private
+  def authenticate_user!
+    token, options = ActionController::HttpAuthentication::Token.token_and_options(request)
 
-  #  def parse_request
-  #    @json = JSON.parse(request.body.read)
-  #  end
+    user_email = options.blank?? nil : options[:email]
+    user = user_email && User.find_by(email: user_email)
+
+    if user && ActiveSupport::SecurityUtils.secure_compare(user.authentication_token, token)
+      @current_user = user
+    else
+      return unauthenticated!
+    end
+  end
+
+   def unauthenticated!
+    response.headers['WWW-Authenticate'] = "Token realm=Application"
+    render json: { error: 'Bad credentials' }, status: 401
+  end
 end
