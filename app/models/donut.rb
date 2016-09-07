@@ -1,5 +1,6 @@
 class Donut < ActiveRecord::Base
   mount_uploader :picture, PictureUploader
+  include ActiveModel::Serialization
   has_many :donut_ratings
   belongs_to :donut_shop
   accepts_nested_attributes_for :donut_shop

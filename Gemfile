@@ -9,6 +9,8 @@ gem 'sass-rails', '~> 5.0'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 
+gem 'active_model_serializers', '~> 0.10.0.rc2'
+
 
 # For photo upload
 gem 'carrierwave','0.10.0'

@@ -18,6 +18,7 @@ Rails.application.routes.draw do
       resources :donuts, only: [:index, :create, :show, :update, :destroy]
       resources :donut_shops, only: [:index, :create, :show, :update, :destroy]
       resources :donut_ratings, only: [:index, :create, :show, :update, :destroy]
+      resources :sessions, only: [:create]
     end
   end
 
